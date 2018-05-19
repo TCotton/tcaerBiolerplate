@@ -2,4 +2,4 @@ function greeter () {
 	document.write('From greeter function');
 }
 
-greeter();
+module.exports = greeter;
