@@ -1,13 +1,13 @@
 {
-  "name": "tcaer2",
+  "name": "tcaer",
   "version": "1.0.0",
-  "description": "whatever",
+  "description": "Simple simple",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development ./src/index.js --output ./src/bundle.js",
-    "build": "webpack --mode production ./src/index.js  --output ./dist/bundle.js",
-    "start": "webpack-dev-server --mode development --open"
+    "dev": "webpack --mode development ./app/index.js --output ./app/bundle.js",
+    "build": "webpack --mode production ./app/index.js  --output ./dist/bundle.js",
+    "start": "webpack-dev-server --mode development ./app/index.js --open"
   },
   "author": "Andy Walpole",
   "license": "ISC",
