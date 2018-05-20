@@ -6,7 +6,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
-				exclude: /node_modules/,
+				exclude: (/node_modules|bower_components/),
 				use: {
 					loader: 'babel-loader'
 				}
@@ -16,20 +16,27 @@ module.exports = {
 				use: [
 					{
 						loader: 'html-loader',
-						options: { minimize: true }
 					}
 				]
 			},
 			{
 				test: /\.css$/,
 				use: [MiniCssExtractPlugin.loader, 'css-loader']
+			},
+			{
+				test: /\.(png|jpg|gif|svg)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {}
+					}
+				]
 			}
 		]
 	},
 	plugins: [
 		new HtmlWebPackPlugin({
-			template: './public/index.html',
-			filename: './index.html'
+			template: './src/index.html',
 		}),
 		new MiniCssExtractPlugin({
 			filename: '[name].css',

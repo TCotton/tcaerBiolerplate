@@ -1,0 +1,40 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	background: transparent;
+	width: 100px;
+	height: 100px;
+}
+
+.App-header {
+	background: transparent;
+}
+
+.App-title {
+	background: transparent;
+}
+
+.App-intro {
+	background: transparent;
+}
+
+@keyframes App-logo-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+form input, form textarea, form button {
+	display: block;
+	margin: 10px auto;
+	font-size: 14px;
+	width: 200px;
+	padding: 10px;
+}
+
+form button {
+	width: unset;
+	padding: auto;
+}
