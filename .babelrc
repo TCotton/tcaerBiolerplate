@@ -4,6 +4,7 @@
       "targets": {
         "chrome": "66"
       }
-    }]
+    }],
+    "react"
   ]
 }

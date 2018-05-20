@@ -66,7 +66,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./public/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -76,31 +76,22 @@
   !*** ./public/app.js ***!
   \***********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("function greeter () {\n\tdocument.write('From greeter function');\n}\n\ngreeter();\n\n\n//# sourceURL=webpack:///./public/app.js?");
-
-/***/ }),
-
-/***/ "./public/bundle.js":
-/*!**************************!*\
-  !*** ./public/bundle.js ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("\n\n//# sourceURL=webpack:///./public/bundle.js?");
+"use strict";
+eval("\n\nvar _Greeter = __webpack_require__(/*! ./components/Greeter.js */ \"./public/components/Greeter.js\");\n\n(0, _Greeter.greeter)();\n\n//# sourceURL=webpack:///./public/app.js?");
 
 /***/ }),
 
-/***/ 0:
-/*!************************************************!*\
-  !*** multi ./public/app.js ./public/bundle.js ***!
-  \************************************************/
+/***/ "./public/components/Greeter.js":
+/*!**************************************!*\
+  !*** ./public/components/Greeter.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./public/app.js */\"./public/app.js\");\nmodule.exports = __webpack_require__(/*! ./public/bundle.js */\"./public/bundle.js\");\n\n\n//# sourceURL=webpack:///multi_./public/app.js_./public/bundle.js?");
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n\tvalue: true\n});\nexports.greeter = greeter;\nfunction greeter() {\n\tdocument.write('From greeter function');\n}\n\n//# sourceURL=webpack:///./public/components/Greeter.js?");
 
 /***/ })
 
