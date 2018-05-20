@@ -5,6 +5,7 @@
         "chrome": "66"
       }
     }],
-    "react"
+    "react",
+    "stage-0"
   ]
 }
